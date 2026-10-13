@@ -7,7 +7,7 @@ import {
 } from 'lucide-react'
 import './styles.css'
 
-const ENQUIRY_API_URL = 'http://localhost:8080/api/enquiries'
+const ENQUIRY_API_URL = 'https://codescapex-backend.onrender.com/api/enquiries'
 
 const programs = [
   { icon: Braces, title: 'Programming & Core Java', text: 'Programming fundamentals, object-oriented programming, exception handling, collections, and coding practice.' },
@@ -55,6 +55,7 @@ function App() {
       phone: String(data.get('phone') || '').trim(),
       program: String(data.get('program') || '').trim(),
       students: String(data.get('students') || '').trim(),
+      
       message: String(data.get('message') || '').trim()
     }
 
