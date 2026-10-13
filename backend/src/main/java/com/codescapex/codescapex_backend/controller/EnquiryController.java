@@ -17,6 +17,7 @@ import com.codescapex.codescapex_backend.service.EnquiryService;
 @RestController
 @RequestMapping("/api/enquiries")
 @CrossOrigin(origins = {
+    "https://codescapex-academy.vercel.app",
     "http://localhost:5173",
     "http://localhost:3000"
 })
