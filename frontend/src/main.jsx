@@ -5,7 +5,7 @@ import {
   Layers3, Code2, Menu, X, Check, Mail, MapPin, GraduationCap, Laptop,
   ShieldCheck, ChartNoAxesCombined, ChevronDown
 } from 'lucide-react'
-import './styles.css'
+
 
 const ENQUIRY_API_URL = 'https://codescapex-backend.onrender.com/api/enquiries'
 
@@ -168,7 +168,19 @@ function App() {
             <div className="mt-9 flex h-28 items-end gap-3">{[35,53,70,61,94].map((height, i) => <span key={i} style={{height: `${height}%`}} className="flex-1 rounded-t-lg bg-gradient-to-t from-cyan-700 to-cyan" />)}</div>
             <div className="mt-5 flex justify-between border-t border-white/20 pt-4 text-[10px] font-bold tracking-widest text-slate-300"><span>LEARN · PRACTICE · BUILD</span><span>INSTITUTIONAL PROGRAMS</span></div>
           </div>
-          <div><p className="section-kicker">Institutional collaboration</p><h2>Training designed around your students and schedule.</h2><p className="mt-4 text-sm leading-7 text-slate-600">Partner with Code Scapex Academy to plan practical technical sessions that complement academic learning and give students opportunities to apply concepts.</p>
+          <div><p className="section-kicker">Institutional collaboration</p>
+          
+<h2>Technical Training Programs for Engineering Colleges</h2>
+
+<p className="mt-4 text-sm leading-7 text-slate-600">
+  Code Scapex Academy offers practical technical training for
+  engineering colleges and institutions, including Core Java,
+  Python, SQL, Web Development, Data Structures and Algorithms
+  (DSA), and customized coding workshops that complement
+  academic learning through hands-on practice.
+</p>
+
+          
             <div className="my-7 space-y-5">{[
               ['Programs aligned to your requirements', 'Discuss student year, department, current skill level, learning objectives, and duration.'],
               ['Practical, guided learning', 'Combine concept explanations with coding exercises, demonstrations, and project work.'],
