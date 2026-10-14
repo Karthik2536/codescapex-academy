@@ -5,7 +5,7 @@ import {
   Layers3, Code2, Menu, X, Check, Mail, MapPin, GraduationCap, Laptop,
   ShieldCheck, ChartNoAxesCombined, ChevronDown
 } from 'lucide-react'
-
+import "./styles.css" 
 
 const ENQUIRY_API_URL = 'https://codescapex-backend.onrender.com/api/enquiries'
 
@@ -123,7 +123,13 @@ function App() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:py-20 lg:grid-cols-[1.08fr_.92fr] lg:gap-14 lg:py-24">
           <div>
             <div className="eyebrow"><span className="h-0.5 w-6 bg-cyan" /> Industry-focused technical training</div>
-            <h1 className="mt-6 max-w-3xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Build skills.<br />Shape <span className="text-cyan">careers.</span><br />Empower institutions.</h1>
+           
+<h1 className="mt-6 max-w-3xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+  Practical Technical Training for{" "}
+  <span className="text-cyan">Engineering Students</span>
+  and Institutions
+</h1>
+
             <p className="mt-6 max-w-xl text-base leading-8 text-slate-300">Practical, hands-on technology training designed to help engineering students connect classroom concepts with real-world problem solving.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a className="btn-primary" href="#contact">Discuss an institutional program <ArrowRight size={16} /></a>
