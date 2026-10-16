@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 
-const SITE_URL = 'https://codescapex-academy.vercel.app'
+const SITE_URL = 'https://code-scapex-test.vercel.app'
 const LOGO_URL = `${SITE_URL}/codescapex-logo.jpeg`
 
 const KEYWORDS = [
@@ -246,6 +246,12 @@ export default function SEO() {
       <meta name="keywords" content={KEYWORDS} />
       <meta name="author" content="Code Scapex Academy - ALTUMERA SOLUTIONS PRIVATE LIMITED" />
       <link rel="canonical" href={SITE_URL} />
+
+      {/* Favicon & Touch Icons */}
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
       {/* Crawling & Indexing */}
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
